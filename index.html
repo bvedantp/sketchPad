@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sketch it!</title>
-        <meta charset="UTF-08">
+        <title>Sketch Pad!</title>
+        <meta charset="UT-08">
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <div class="container">
+        <div class="buttons">
+            <input id="picker" type="color" value="#333333">
+            <button id="normalBtn">Normal Mode</button>
+            <button id="rainbow">Color changing mode</button>
+            <button id="clearBtn">Clear</button>
+            <button id="erase">Erase</button>
+            <div id="sizeValue" class="size-value">16 x 16</div>
+            <input id="range" type="range" min="2" max="64" value="16" >
+            
+        </div>
+        <div class="grid" id="grid">
 
         </div>
         <script src="logic.js" defer></script>
